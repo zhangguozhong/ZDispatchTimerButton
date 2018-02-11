@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CECEBEBB203021960045FD97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEBEBA203021960045FD97 /* AppDelegate.m */; };
+		CECEBEBE203021960045FD97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEBEBD203021960045FD97 /* ViewController.m */; };
+		CECEBEC1203021960045FD97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECEBEBF203021960045FD97 /* Main.storyboard */; };
+		CECEBEC3203021960045FD97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECEBEC2203021960045FD97 /* Assets.xcassets */; };
+		CECEBEC6203021960045FD97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECEBEC4203021960045FD97 /* LaunchScreen.storyboard */; };
+		CECEBEC9203021960045FD97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEBEC8203021960045FD97 /* main.m */; };
+		CECEBED2203022910045FD97 /* ZDispatchTimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEBED1203022910045FD97 /* ZDispatchTimerButton.m */; };
+		CECEBED5203022B20045FD97 /* ZDispatchTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEBED4203022B20045FD97 /* ZDispatchTimerManager.m */; };
+		CECEBED9203029CA0045FD97 /* ZTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEBED8203029CA0045FD97 /* ZTempViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CECEBEB6203021960045FD97 /* ZDispatchTimerButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZDispatchTimerButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECEBEB9203021960045FD97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CECEBEBA203021960045FD97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CECEBEBC203021960045FD97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CECEBEBD203021960045FD97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CECEBEC0203021960045FD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CECEBEC2203021960045FD97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CECEBEC5203021960045FD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CECEBEC7203021960045FD97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECEBEC8203021960045FD97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CECEBED0203022910045FD97 /* ZDispatchTimerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDispatchTimerButton.h; sourceTree = "<group>"; };
+		CECEBED1203022910045FD97 /* ZDispatchTimerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDispatchTimerButton.m; sourceTree = "<group>"; };
+		CECEBED3203022B20045FD97 /* ZDispatchTimerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDispatchTimerManager.h; sourceTree = "<group>"; };
+		CECEBED4203022B20045FD97 /* ZDispatchTimerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDispatchTimerManager.m; sourceTree = "<group>"; };
+		CECEBED7203029CA0045FD97 /* ZTempViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTempViewController.h; sourceTree = "<group>"; };
+		CECEBED8203029CA0045FD97 /* ZTempViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTempViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECEBEB3203021960045FD97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CECEBEAD203021960045FD97 = {
+			isa = PBXGroup;
+			children = (
+				CECEBEB8203021960045FD97 /* ZDispatchTimerButton */,
+				CECEBEB7203021960045FD97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CECEBEB7203021960045FD97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECEBEB6203021960045FD97 /* ZDispatchTimerButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECEBEB8203021960045FD97 /* ZDispatchTimerButton */ = {
+			isa = PBXGroup;
+			children = (
+				CECEBED6203029B40045FD97 /* Controller */,
+				CECEBECF203022730045FD97 /* Classes */,
+				CECEBEB9203021960045FD97 /* AppDelegate.h */,
+				CECEBEBA203021960045FD97 /* AppDelegate.m */,
+				CECEBEBC203021960045FD97 /* ViewController.h */,
+				CECEBEBD203021960045FD97 /* ViewController.m */,
+				CECEBEBF203021960045FD97 /* Main.storyboard */,
+				CECEBEC2203021960045FD97 /* Assets.xcassets */,
+				CECEBEC4203021960045FD97 /* LaunchScreen.storyboard */,
+				CECEBEC7203021960045FD97 /* Info.plist */,
+				CECEBEC8203021960045FD97 /* main.m */,
+			);
+			path = ZDispatchTimerButton;
+			sourceTree = "<group>";
+		};
+		CECEBECF203022730045FD97 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CECEBED0203022910045FD97 /* ZDispatchTimerButton.h */,
+				CECEBED1203022910045FD97 /* ZDispatchTimerButton.m */,
+				CECEBED3203022B20045FD97 /* ZDispatchTimerManager.h */,
+				CECEBED4203022B20045FD97 /* ZDispatchTimerManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CECEBED6203029B40045FD97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CECEBED7203029CA0045FD97 /* ZTempViewController.h */,
+				CECEBED8203029CA0045FD97 /* ZTempViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CECEBEB5203021960045FD97 /* ZDispatchTimerButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECEBECC203021960045FD97 /* Build configuration list for PBXNativeTarget "ZDispatchTimerButton" */;
+			buildPhases = (
+				CECEBEB2203021960045FD97 /* Sources */,
+				CECEBEB3203021960045FD97 /* Frameworks */,
+				CECEBEB4203021960045FD97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZDispatchTimerButton;
+			productName = ZDispatchTimerButton;
+			productReference = CECEBEB6203021960045FD97 /* ZDispatchTimerButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECEBEAE203021960045FD97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CECEBEB5203021960045FD97 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CECEBEB1203021960045FD97 /* Build configuration list for PBXProject "ZDispatchTimerButton" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CECEBEAD203021960045FD97;
+			productRefGroup = CECEBEB7203021960045FD97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECEBEB5203021960045FD97 /* ZDispatchTimerButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECEBEB4203021960045FD97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECEBEC6203021960045FD97 /* LaunchScreen.storyboard in Resources */,
+				CECEBEC3203021960045FD97 /* Assets.xcassets in Resources */,
+				CECEBEC1203021960045FD97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECEBEB2203021960045FD97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECEBED2203022910045FD97 /* ZDispatchTimerButton.m in Sources */,
+				CECEBED5203022B20045FD97 /* ZDispatchTimerManager.m in Sources */,
+				CECEBEBE203021960045FD97 /* ViewController.m in Sources */,
+				CECEBED9203029CA0045FD97 /* ZTempViewController.m in Sources */,
+				CECEBEC9203021960045FD97 /* main.m in Sources */,
+				CECEBEBB203021960045FD97 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CECEBEBF203021960045FD97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECEBEC0203021960045FD97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CECEBEC4203021960045FD97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECEBEC5203021960045FD97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CECEBECA203021960045FD97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CECEBECB203021960045FD97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CECEBECD203021960045FD97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V3T8NLWMK;
+				INFOPLIST_FILE = ZDispatchTimerButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangsan.ZDispatchTimerButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CECEBECE203021960045FD97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V3T8NLWMK;
+				INFOPLIST_FILE = ZDispatchTimerButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangsan.ZDispatchTimerButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECEBEB1203021960045FD97 /* Build configuration list for PBXProject "ZDispatchTimerButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECEBECA203021960045FD97 /* Debug */,
+				CECEBECB203021960045FD97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECEBECC203021960045FD97 /* Build configuration list for PBXNativeTarget "ZDispatchTimerButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECEBECD203021960045FD97 /* Debug */,
+				CECEBECE203021960045FD97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECEBEAE203021960045FD97 /* Project object */;
+}
