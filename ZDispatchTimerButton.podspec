@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZDispatchTimerButton"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "封装好的一个简单的倒计时按钮"
 
   # This description is used to generate tags and improve search results.
