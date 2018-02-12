@@ -16,13 +16,13 @@
 
 @implementation ZDispatchTimerManager
 
-+ (instancetype)shareDispatchTimerManager {
++ (instancetype)timerManager {
     static dispatch_once_t onceTimerToken;
-    static ZDispatchTimerManager *dispatchTimerManager;
+    static ZDispatchTimerManager *timerManager;
     dispatch_once(&onceTimerToken, ^{
-        dispatchTimerManager = [[ZDispatchTimerManager alloc] init];
+        timerManager = [[self alloc] init];
     });
-    return dispatchTimerManager;
+    return timerManager;
 }
 
 
@@ -41,7 +41,6 @@
         dispatch_resume(timerSource);
         self.timerStorage[timerName] = timerSource;
     }
-    
     
     __weak typeof(self) weakSelf = self;
     dispatch_source_set_timer(timerSource, DISPATCH_TIME_NOW, interval * NSEC_PER_SEC, 0);
@@ -83,12 +82,10 @@
 
 - (void)cancelTimerWithName:(NSString *)timerName {
     dispatch_source_t timerSource = self.timerStorage[timerName];
-    if (!timerSource) {
-        return;
+    if (timerSource) {
+        [self.timerStorage removeObjectForKey:timerName];
+        dispatch_source_cancel(timerSource);
     }
-    
-    [self.timerStorage removeObjectForKey:timerName];
-    dispatch_source_cancel(timerSource);
 }
 
 
@@ -101,7 +98,8 @@
 
 - (NSMutableDictionary *)timerStorage {
     if (!_timerStorage) {
-        _timerStorage = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *timerStorage = [[NSMutableDictionary alloc] init];
+        _timerStorage = timerStorage;
     }
     return _timerStorage;
 }

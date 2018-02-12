@@ -57,7 +57,7 @@ static NSInteger const DYLDispatchTimerButtonTotalCountDown = 60;
         self.configBlock(self);
     }
     
-    [[ZDispatchTimerManager shareDispatchTimerManager] scheduledDispatchTimerWithName:self.dispatchTimerName timerInterval:self.timerInterval countDown:self.totalCountDown queue:self.currentQueue repeat:self.repeat action:^(NSInteger second) {
+    [[ZDispatchTimerManager timerManager] scheduledDispatchTimerWithName:self.dispatchTimerName timerInterval:self.timerInterval countDown:self.totalCountDown queue:self.currentQueue repeat:self.repeat action:^(NSInteger second) {
                 NSString *title = [NSString stringWithFormat:@"%ld秒", (long)second];
                 [self setTitle:title forState:UIControlStateNormal];
                 [self setTitle:title forState:UIControlStateDisabled];
@@ -76,7 +76,7 @@ static NSInteger const DYLDispatchTimerButtonTotalCountDown = 60;
 }
 
 - (void)closeCountDown {
-    [[ZDispatchTimerManager shareDispatchTimerManager] cancelTimerWithName:self.dispatchTimerName];
+    [[ZDispatchTimerManager timerManager] cancelTimerWithName:self.dispatchTimerName];
 }
 
 - (void)dealloc {
