@@ -51,20 +51,20 @@ static NSInteger const DYLDispatchTimerButtonTotalCountDown = 60;
     [self addTarget:self action:@selector(startCountDown)forControlEvents:UIControlEventTouchUpInside];
 }
 
+
 // 开始倒计时
 - (void)startCountDown {
-    if (self.configBlock) {
-        self.configBlock(self);
+    if (_configBlock) {
+        _configBlock(self);
     }
-    
     [[ZDispatchTimerManager timerManager] scheduledDispatchTimerWithName:self.dispatchTimerName timerInterval:self.timerInterval countDown:self.totalCountDown queue:self.currentQueue repeat:self.repeat action:^(NSInteger second) {
-                NSString *title = [NSString stringWithFormat:@"%ld秒", (long)second];
-                [self setTitle:title forState:UIControlStateNormal];
-                [self setTitle:title forState:UIControlStateDisabled];
-            } cancel:^{
-                self.enabled = YES;
-                [self setTitle:self.dispatchButtonTitle forState:UIControlStateNormal];
-            }];
+        NSString *title = [NSString stringWithFormat:@"%ld秒", (long)second];
+        [self setTitle:title forState:UIControlStateNormal];
+        [self setTitle:title forState:UIControlStateDisabled];
+    } cancel:^{
+        self.enabled = YES;
+        [self setTitle:self.dispatchButtonTitle forState:UIControlStateNormal];
+    }];
 }
 
 - (void)setDispatchButtonTitle:(NSString *)dispatchButtonTitle {

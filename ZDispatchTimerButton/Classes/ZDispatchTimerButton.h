@@ -48,7 +48,7 @@
 /**
  在定时器开始倒计时之前，对button执行相应的配置，但其实可以不用加上这个配置的block，直接设置button属性就行，但有一些属性是要在点击按钮或者是开启定时器时才需要设置，因此就加上了这个block
  */
-@property (copy, nonatomic) void (^configBlock)(UIButton *sender);
+@property (copy, nonatomic) void (^configBlock)(ZDispatchTimerButton *timerButton);
 
 /**
  关闭定时器

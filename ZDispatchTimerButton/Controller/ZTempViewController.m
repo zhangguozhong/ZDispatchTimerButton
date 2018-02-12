@@ -21,8 +21,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     _timerButton = [[ZDispatchTimerButton alloc] initWithFrame:CGRectMake(0, 90, 200, 40)];
     _timerButton.dispatchButtonTitle = @"开始计时";
-    _timerButton.configBlock = ^(UIButton *sender) {
-        sender.enabled = NO;
+    _timerButton.configBlock = ^(ZDispatchTimerButton *timerButton) {
+        timerButton.enabled = NO;
     };
     [self.view addSubview:_timerButton];
 }
